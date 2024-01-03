@@ -34,10 +34,6 @@ const renderMonster = (monsterObject) => {
     monsterContainer.append(name, age, description)
 }
 
-// create a form -> name, age, description and submit form
-// when i submit the form, I create a monster object: {
-    //name, age, description
-
 let formContainer = document.getElementById("create-monster")
 
 let form = document.createElement("form")
@@ -57,10 +53,6 @@ submitButton.type = "submit"
 form.append(inputName, inputAge, inputDescription, submitButton)
 formContainer.append(form)
 
-
-// create an add eventlistener to take in the new input for the form
-// when the submit takes place append the new monster to the end of the form 
-// refer to the function we created 
 
 
 form.addEventListener('submit', (e) => {
